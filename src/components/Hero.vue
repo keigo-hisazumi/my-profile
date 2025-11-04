@@ -5,7 +5,7 @@
         <img src="https://via.placeholder.com/200" alt="Profile Photo" />
       </div>
       <div class="hero-text">
-        <h1 class="name">山田 太郎</h1>
+        <h1 class="name">久積奎吾</h1>
         <p class="occupation">フルスタック Web デベロッパー</p>
         <div class="social-links">
           <a href="https://github.com" target="_blank" title="GitHub">
