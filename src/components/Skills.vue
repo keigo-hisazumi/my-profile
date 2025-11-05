@@ -3,60 +3,60 @@
     <h2 class="section-title">スキル</h2>
     <div class="skills-content">
       <div class="skill-category">
-        <h3>フロントエンド</h3>
+        <h3>レコーディング</h3>
         <div class="skill-items">
           <div class="skill-item">
-            <span class="skill-name">Vue.js</span>
+            <span class="skill-name">Pro Tools</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Logic Pro</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 90%"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">React</span>
+            <span class="skill-name">Ableton Live</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 85%"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">JavaScript / TypeScript</span>
+            <span class="skill-name">マイクロフォン技術</span>
             <div class="skill-bar">
-              <div class="skill-level" style="width: 88%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">HTML / CSS</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 95%"></div>
+              <div class="skill-level" style="width: 90%"></div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="skill-category">
-        <h3>バックエンド</h3>
+        <h3>ミキシング・マスタリング</h3>
         <div class="skill-items">
           <div class="skill-item">
-            <span class="skill-name">Node.js</span>
+            <span class="skill-name">ミキシング</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 92%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">マスタリング</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">アナログ機材</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 85%"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Python</span>
+            <span class="skill-name">プラグイン処理</span>
             <div class="skill-bar">
-              <div class="skill-level" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Spring Boot</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 78%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Database (SQL/NoSQL)</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 75%"></div>
+              <div class="skill-level" style="width: 90%"></div>
             </div>
           </div>
         </div>
@@ -66,21 +66,21 @@
         <h3>その他</h3>
         <div class="skill-items">
           <div class="skill-item">
-            <span class="skill-name">Git / GitHub</span>
+            <span class="skill-name">ライブPA</span>
             <div class="skill-bar">
-              <div class="skill-level" style="width: 90%"></div>
+              <div class="skill-level" style="width: 87%"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Docker</span>
+            <span class="skill-name">音響デザイン</span>
             <div class="skill-bar">
-              <div class="skill-level" style="width: 70%"></div>
+              <div class="skill-level" style="width: 83%"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">CI/CD</span>
+            <span class="skill-name">音響機材メンテナンス</span>
             <div class="skill-bar">
-              <div class="skill-level" style="width: 75%"></div>
+              <div class="skill-level" style="width: 80%"></div>
             </div>
           </div>
         </div>

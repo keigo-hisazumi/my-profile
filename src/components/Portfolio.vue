@@ -13,8 +13,8 @@
             <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
           </div>
           <div class="project-links">
-            <a :href="project.demo" target="_blank" class="btn-demo">デモ</a>
-            <a :href="project.github" target="_blank" class="btn-github">GitHub</a>
+            <a :href="project.demo" target="_blank" class="btn-demo">詳細</a>
+            <a :href="project.github" target="_blank" class="btn-github">サンプル視聴</a>
           </div>
         </div>
       </div>
@@ -30,39 +30,39 @@ export default {
       projects: [
         {
           id: 1,
-          title: 'Eコマースサイト',
-          description: 'Vue.js と Node.js を使用したフルスタックのEコマースアプリケーション。ショッピングカート、決済機能を実装。',
+          title: 'インディーバンドアルバム制作',
+          description: '新人インディーバンドのデビューアルバムをフルプロデュース。レコーディング、ミキシング、マスタリングまで全工程を担当。',
           image: 'https://via.placeholder.com/400x250',
-          tags: ['Vue.js', 'Node.js', 'MongoDB'],
+          tags: ['レコーディング', 'ミキシング', 'マスタリング'],
           demo: 'https://example.com/demo1',
-          github: 'https://github.com'
+          github: 'https://soundcloud.com'
         },
         {
           id: 2,
-          title: 'タスク管理アプリ',
-          description: 'React と Firebase を使用したリアルタイムタスク管理アプリケーション。ドラッグ&ドロップ機能付き。',
+          title: 'ライブイベント音響',
+          description: '大型音楽フェスティバルのメインステージPA担当。500人規模の会場で最高の音響環境を提供。',
           image: 'https://via.placeholder.com/400x250',
-          tags: ['React', 'Firebase', 'Material-UI'],
+          tags: ['ライブPA', '音響設計', 'イベント'],
           demo: 'https://example.com/demo2',
-          github: 'https://github.com'
+          github: 'https://soundcloud.com'
         },
         {
           id: 3,
-          title: 'ブログプラットフォーム',
-          description: 'Next.js と TypeScript で構築したモダンなブログプラットフォーム。SEO最適化とMarkdownサポート。',
+          title: 'ポッドキャスト制作',
+          description: '人気ポッドキャストシリーズの音響制作。録音、編集、マスタリングまで一貫して担当。',
           image: 'https://via.placeholder.com/400x250',
-          tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+          tags: ['録音', '編集', 'ポッドキャスト'],
           demo: 'https://example.com/demo3',
-          github: 'https://github.com'
+          github: 'https://soundcloud.com'
         },
         {
           id: 4,
-          title: 'データビジュアライゼーション',
-          description: 'D3.js を使用したインタラクティブなデータ可視化ダッシュボード。リアルタイムデータ更新対応。',
+          title: '映像作品音響デザイン',
+          description: '短編映画の音響デザインとミキシング。効果音の制作からファイナルミックスまで担当。',
           image: 'https://via.placeholder.com/400x250',
-          tags: ['Vue.js', 'D3.js', 'WebSocket'],
+          tags: ['音響デザイン', '効果音', '映像音響'],
           demo: 'https://example.com/demo4',
-          github: 'https://github.com'
+          github: 'https://soundcloud.com'
         }
       ]
     }
