@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero-content">
       <div class="profile-image">
-        <img src="/profile.svg" alt="Profile Photo" />
+        <img src="https://github.com/user-attachments/assets/302e9b80-f7d9-4580-b863-0fbed9e97192" alt="Profile Photo" />
       </div>
       <div class="hero-text">
         <h1 class="name">{{ profileData.name }}</h1>
