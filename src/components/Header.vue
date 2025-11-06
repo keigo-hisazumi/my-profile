@@ -105,6 +105,7 @@ nav {
   transform-origin: center;
 }
 
+/* ハンバーガーアイコンのX変形計算: (24px - 3px) / 2 = 10.5px */
 .hamburger.active span:nth-child(1) {
   transform: translateY(10.5px) rotate(45deg);
 }
@@ -171,7 +172,7 @@ nav {
   .nav-links {
     position: fixed;
     left: 0;
-    top: 70px;
+    top: var(--header-height);
     flex-direction: column;
     background-color: white;
     width: 100%;
