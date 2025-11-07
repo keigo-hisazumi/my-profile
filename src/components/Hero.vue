@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero-content">
       <div class="profile-image">
-        <img src="https://via.placeholder.com/200" alt="Profile Photo" />
+        <img src="/profile.png" alt="Profile Photo" />
       </div>
       <div class="hero-text">
         <h1 class="name">{{ profileData.name }}</h1>
