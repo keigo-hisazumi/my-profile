@@ -53,6 +53,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 3rem;
+  padding-left: 3rem;
 }
 
 .profile-image img {
@@ -106,6 +107,7 @@ export default {
   .hero-content {
     flex-direction: column;
     text-align: center;
+    padding-left: 0;
   }
   
   .name {
