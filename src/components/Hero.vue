@@ -107,6 +107,7 @@ export default {
   .hero-content {
     flex-direction: column;
     text-align: center;
+    padding-left: 0;
   }
   
   .name {
