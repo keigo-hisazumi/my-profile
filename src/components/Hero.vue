@@ -53,6 +53,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 3rem;
+  padding-left: 3rem;
 }
 
 .profile-image img {
