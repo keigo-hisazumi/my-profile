@@ -117,34 +117,6 @@ export const profiles = {
         { icon: '🎓', title: '学歴', value: '音響技術専門学校卒業' }
       ]
     },
-    skills: [
-      {
-        category: 'レコーディング',
-        items: [
-          'Pro Tools',
-          'Logic Pro',
-          'Ableton Live',
-          'マイクロフォン技術'
-        ]
-      },
-      {
-        category: 'ミキシング・マスタリング',
-        items: [
-          'ミキシング',
-          'マスタリング',
-          'アナログ機材',
-          'プラグイン処理'
-        ]
-      },
-      {
-        category: 'その他',
-        items: [
-          'ライブPA',
-          '音響デザイン',
-          '音響機材メンテナンス'
-        ]
-      }
-    ],
     equipment: [
       {
         category: 'PC',
