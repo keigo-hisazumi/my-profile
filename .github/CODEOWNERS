@@ -1,0 +1,6 @@
+# CODEOWNERS
+# PR が作成されると、対応するパスのオーナーに自動でレビュー依頼が飛ぶ。
+# 詳細: https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# デフォルトオーナー（リポジトリ全体）
+* @keigo-hisazumi
