@@ -138,8 +138,10 @@ nav {
 .profile-toggle {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
+  min-width: 100px;
   background: linear-gradient(135deg, var(--primary-color), #6cb2ff);
   color: white;
   border: none;
