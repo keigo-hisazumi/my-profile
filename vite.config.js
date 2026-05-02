@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/my-profile/',
+  base: process.env.VITE_BASE_PATH || '/my-profile/',
   build: {
     outDir: 'dist'
   }
