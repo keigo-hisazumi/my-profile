@@ -16,7 +16,10 @@
           <li>
             <button @click="handleProfileToggle" class="profile-toggle" :title="toggleTitle">
               <span class="toggle-icon">{{ currentProfile === 'webDeveloper' ? '💻' : '🎵' }}</span>
-              <span class="toggle-text">{{ currentProfile === 'webDeveloper' ? 'Web Dev' : '音響' }}</span>
+              <span class="toggle-text-stack">
+                <span :style="{ visibility: currentProfile === 'webDeveloper' ? 'visible' : 'hidden' }">Web Dev</span>
+                <span :style="{ visibility: currentProfile !== 'webDeveloper' ? 'visible' : 'hidden' }">音響</span>
+              </span>
             </button>
           </li>
         </ul>
@@ -135,9 +138,19 @@ nav {
   color: var(--primary-color);
 }
 
+.toggle-text-stack {
+  display: grid;
+  font-size: 0.85rem;
+}
+
+.toggle-text-stack > span {
+  grid-area: 1 / 1;
+}
+
 .profile-toggle {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background: linear-gradient(135deg, var(--primary-color), #6cb2ff);
@@ -160,9 +173,6 @@ nav {
   font-size: 1.2rem;
 }
 
-.toggle-text {
-  font-size: 0.85rem;
-}
 
 @media (max-width: 768px) {
   .hamburger {

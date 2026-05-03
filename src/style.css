@@ -28,6 +28,7 @@ body {
   color: var(--text-color);
   background-color: var(--secondary-color);
   line-height: 1.6;
+  scrollbar-gutter: stable;
 }
 
 #app {
@@ -35,6 +36,7 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
