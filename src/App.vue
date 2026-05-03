@@ -4,7 +4,7 @@
     <main class="container">
       <Hero :profileData="profileData.hero" />
       <About :profileData="profileData.about" />
-      <Skills :profileData="profileData.skills" />
+      <Skills v-if="profileData.skills" :profileData="profileData.skills" />
       <Equipment v-if="profileData.equipment" :profileData="profileData.equipment" />
       <Portfolio :profileData="profileData.portfolio" />
       <Contact />
