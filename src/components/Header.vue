@@ -10,7 +10,12 @@
         </button>
         <ul class="nav-links" :class="{ active: isMenuOpen }">
           <li><a href="#about" @click="closeMenu">About</a></li>
-          <li><a href="#skills" @click="closeMenu">Skills</a></li>
+          <li v-if="currentProfile === 'soundEngineer'">
+            <a href="#equipment" @click="closeMenu">Equipment</a>
+          </li>
+          <li v-else>
+            <a href="#skills" @click="closeMenu">Skills</a>
+          </li>
           <li><a href="#portfolio" @click="closeMenu">Portfolio</a></li>
           <li><a href="#contact" @click="closeMenu">Contact</a></li>
           <li>
@@ -44,8 +49,8 @@ export default {
   },
   computed: {
     toggleTitle() {
-      return this.currentProfile === 'webDeveloper' 
-        ? '音響エンジニアプロフィールに切り替え' 
+      return this.currentProfile === 'webDeveloper'
+        ? '音響エンジニアプロフィールに切り替え'
         : 'Webデベロッパープロフィールに切り替え'
     }
   },
@@ -57,7 +62,8 @@ export default {
       this.isMenuOpen = false
     },
     handleProfileToggle() {
-      this.$emit('toggle-profile')
+      const target = this.currentProfile === 'webDeveloper' ? '/sound' : '/dev'
+      this.$router.push(target)
       this.closeMenu()
     }
   }
@@ -178,7 +184,7 @@ nav {
   .hamburger {
     display: flex;
   }
-  
+
   .nav-links {
     position: fixed;
     left: 0;
@@ -194,23 +200,23 @@ nav {
     overflow: hidden;
     opacity: 0;
   }
-  
+
   .nav-links.active {
     max-height: 400px;
     opacity: 1;
     padding: 1rem 0;
   }
-  
+
   .nav-links li {
     padding: 0.8rem 0;
   }
-  
+
   .nav-links a {
     display: block;
     padding: 0.5rem 0;
     font-size: 1.1rem;
   }
-  
+
   .profile-toggle {
     padding: 0.8rem 1.5rem;
     margin: 0.5rem auto;
