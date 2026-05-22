@@ -97,24 +97,23 @@ export const profiles = {
   },
   soundEngineer: {
     hero: {
-      name: '久積奎吾',
-      occupation: '音響エンジニア (フリーランス)',
+      name: 'ずーみん',
+      occupation: 'サウンドエンジニア',
+      description: '音響機器ヲタク / レコーディング/ミックス/マスタリング',
       socialLinks: [
-        { name: 'GitHub', url: 'https://github.com', icon: 'github' },
-        { name: 'Twitter', url: 'https://twitter.com', icon: 'twitter' },
-        { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'linkedin' },
-        { name: 'Bluesky', url: 'https://bsky.app/profile/zuming.bsky.social', icon: 'bluesky' }
+        { name: 'Discord', url: 'https://discord.com', icon: 'discord', username: 'zumi_0529' },
+        { name: 'Twitter (現X)', url: 'https://twitter.com', icon: 'twitter' },
+        { name: 'Bluesky', url: 'https://bsky.app/profile/zuming.bsky.social', icon: 'bluesky' },
+        { name: 'お仕事させていただいたリスト', url: 'https://www.youtube.com', icon: 'youtube' }
       ]
     },
     about: {
       paragraphs: [
-        'こんにちは！久積奎吾と申します。音響に情熱を持つ音響エンジニアです。',
-        '音響技術専門学校を卒業後、レコーディングスタジオで5年間勤務し、様々なアーティストの録音、ミキシング、マスタリングを担当してきました。',
-        '現在はフリーランスとして独立し、レコーディング、ライブPA、音響デザインなど幅広い音響制作に携わっています。常にクライアントのビジョンを実現し、最高の音質を追求することを心がけています。'
+        '音響の専門学校を卒業後、5年間レコーディングスタジオに勤務。その後独立して現在活動中。'
       ],
       infoCards: [
-        { icon: '💼', title: '職業', value: '音響エンジニア' },
-        { icon: '🎓', title: '学歴', value: '音響技術専門学校卒業' }
+        { icon: '💼', title: '職業', value: 'サウンドエンジニア' },
+        { icon: '🎓', title: '学歴', value: '音響専門学校卒業' }
       ]
     },
     equipment: [
@@ -139,6 +138,7 @@ export const profiles = {
       {
         category: 'I/O',
         items: [
+          'MOTU / 828mk3 Hybrid',
           'MACKIE / DL16S',
           'STEINBERG / UR28M'
         ]
