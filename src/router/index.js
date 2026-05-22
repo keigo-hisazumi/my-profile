@@ -2,7 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ProfilePage from '../views/ProfilePage.vue'
 
 const routes = [
-  { path: '/', redirect: '/sound' },
+  {
+    path: '/',
+    component: ProfilePage,
+    props: { profileKey: 'soundEngineer' },
+    meta: { profile: 'soundEngineer' }
+  },
   {
     path: '/sound',
     component: ProfilePage,
