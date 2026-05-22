@@ -185,47 +185,21 @@ export const profiles = {
     portfolio: [
       {
         id: 1,
-        title: 'インディーバンドアルバム制作',
-        description: '新人インディーバンドのデビューアルバムをフルプロデュース。レコーディング、ミキシング、マスタリングまで全工程を担当。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['レコーディング', 'ミキシング', 'マスタリング'],
-        demoUrl: 'https://example.com/demo1',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
+        title: '毛布にくるまって',
+        description: '浮力 — レコーディング・ミックス・マスタリング担当',
+        youtubeId: 'O-hlZ98lur8',
+        tags: ['レコーディング', 'ミックス', 'マスタリング'],
+        demoUrl: 'https://youtu.be/O-hlZ98lur8',
+        demoLabel: 'YouTube で視聴'
       },
       {
         id: 2,
-        title: 'ライブイベント音響',
-        description: '大型音楽フェスティバルのメインステージPA担当。500人規模の会場で最高の音響環境を提供。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['ライブPA', '音響設計', 'イベント'],
-        demoUrl: 'https://example.com/demo2',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
-      },
-      {
-        id: 3,
-        title: 'ポッドキャスト制作',
-        description: '人気ポッドキャストシリーズの音響制作。録音、編集、マスタリングまで一貫して担当。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['録音', '編集', 'ポッドキャスト'],
-        demoUrl: 'https://example.com/demo3',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
-      },
-      {
-        id: 4,
-        title: '映像作品音響デザイン',
-        description: '短編映画の音響デザインとミキシング。効果音の制作からファイナルミックスまで担当。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['音響デザイン', '効果音', '映像音響'],
-        demoUrl: 'https://example.com/demo4',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
+        title: 'シンデレラリバティズ',
+        description: 'シンデレラ・ガール — レコーディング・ミックス・マスタリング担当',
+        youtubeId: '14ahw3QO4wQ',
+        tags: ['レコーディング', 'ミックス', 'マスタリング'],
+        demoUrl: 'https://youtu.be/14ahw3QO4wQ',
+        demoLabel: 'YouTube で視聴'
       }
     ]
   }

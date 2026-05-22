@@ -4,7 +4,14 @@
     <div class="portfolio-grid">
       <div v-for="project in profileData" :key="project.id" class="project-card">
         <div class="project-image">
-          <img :src="project.image" :alt="project.title" />
+          <iframe
+            v-if="project.youtubeId"
+            :src="`https://www.youtube.com/embed/${project.youtubeId}`"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <img v-else :src="project.image" :alt="project.title" />
         </div>
         <div class="project-content">
           <h3>{{ project.title }}</h3>
@@ -13,8 +20,8 @@
             <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
           </div>
           <div class="project-links">
-            <a :href="project.demoUrl" target="_blank" class="btn-demo">{{ project.demoLabel }}</a>
-            <a :href="project.sourceUrl" target="_blank" class="btn-github">{{ project.sourceLabel }}</a>
+            <a v-if="project.demoUrl" :href="project.demoUrl" target="_blank" class="btn-demo">{{ project.demoLabel }}</a>
+            <a v-if="project.sourceUrl" :href="project.sourceUrl" target="_blank" class="btn-github">{{ project.sourceLabel }}</a>
           </div>
         </div>
       </div>
@@ -75,10 +82,12 @@ export default {
   overflow: hidden;
 }
 
-.project-image img {
+.project-image img,
+.project-image iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 0;
 }
 
 .project-content {
