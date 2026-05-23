@@ -10,14 +10,13 @@
         </button>
         <ul class="nav-links" :class="{ active: isMenuOpen }">
           <li><a href="#about" @click="closeMenu">About</a></li>
-          <li v-if="currentProfile === 'soundEngineer'">
-            <a href="#equipment" @click="closeMenu">Equipment</a>
-          </li>
-          <li v-else>
+          <li v-if="currentProfile === 'webDeveloper'">
             <a href="#skills" @click="closeMenu">Skills</a>
           </li>
           <li><a href="#portfolio" @click="closeMenu">Portfolio</a></li>
-          <li><a href="#contact" @click="closeMenu">Contact</a></li>
+          <li v-if="currentProfile === 'soundEngineer'">
+            <a href="#equipment" @click="closeMenu">Equipment</a>
+          </li>
           <li v-if="currentProfile === 'webDeveloper'">
             <button @click="handleProfileToggle" class="profile-toggle" :title="toggleTitle">
               <span class="toggle-icon">🎵</span>
