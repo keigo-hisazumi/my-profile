@@ -9,16 +9,16 @@
           <span></span>
         </button>
         <ul class="nav-links" :class="{ active: isMenuOpen }">
-          <li><a href="#about" @click="closeMenu">About</a></li>
+          <li><a href="#about" @click="closeMenu">自己紹介</a></li>
           <li v-if="currentProfile === 'soundEngineer'">
             <a href="#pricing" @click="closeMenu">料金表</a>
           </li>
           <li v-if="currentProfile === 'webDeveloper'">
-            <a href="#skills" @click="closeMenu">Skills</a>
+            <a href="#skills" @click="closeMenu">スキル</a>
           </li>
-          <li><a href="#portfolio" @click="closeMenu">Portfolio</a></li>
+          <li><a href="#portfolio" @click="closeMenu">ポートフォリオ</a></li>
           <li v-if="currentProfile === 'soundEngineer'">
-            <a href="#equipment" @click="closeMenu">Equipment</a>
+            <a href="#equipment" @click="closeMenu">機材</a>
           </li>
           <li v-if="currentProfile === 'webDeveloper'">
             <button @click="handleProfileToggle" class="profile-toggle" :title="toggleTitle">
