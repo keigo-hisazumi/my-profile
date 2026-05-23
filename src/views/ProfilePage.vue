@@ -4,8 +4,8 @@
     <About :profileData="profileData.about" />
     <Pricing v-if="profileData.pricing" :profileData="profileData.pricing" />
     <Skills v-if="profileData.skills" :profileData="profileData.skills" />
-    <Equipment v-if="profileData.equipment" :profileData="profileData.equipment" />
     <Portfolio :profileData="profileData.portfolio" />
+    <Equipment v-if="profileData.equipment" :profileData="profileData.equipment" />
   </div>
 </template>
 

@@ -3,7 +3,6 @@
     <h2 class="section-title">料金表</h2>
     <div class="pricing-grid">
       <div v-for="item in profileData.images" :key="item.alt" class="pricing-item">
-        <p class="pricing-label">{{ item.alt }}</p>
         <img :src="item.src" :alt="item.alt" />
       </div>
     </div>
@@ -43,20 +42,6 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   padding: 0 2rem;
-}
-
-.pricing-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.pricing-label {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin: 0;
 }
 
 .pricing-item img {
