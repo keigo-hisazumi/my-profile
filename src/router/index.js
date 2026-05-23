@@ -16,9 +16,7 @@ const routes = [
   },
   {
     path: '/dev',
-    component: ProfilePage,
-    props: { profileKey: 'webDeveloper' },
-    meta: { profile: 'webDeveloper' }
+    redirect: '/sound'
   }
 ]
 
