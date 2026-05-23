@@ -98,23 +98,32 @@ export const profiles = {
   soundEngineer: {
     hero: {
       name: '久積奎吾',
-      occupation: '音響エンジニア (フリーランス)',
-      socialLinks: [
-        { name: 'GitHub', url: 'https://github.com', icon: 'github' },
-        { name: 'Twitter', url: 'https://twitter.com', icon: 'twitter' },
-        { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'linkedin' },
-        { name: 'Bluesky', url: 'https://bsky.app/profile/zuming.bsky.social', icon: 'bluesky' }
-      ]
+      occupation: 'サウンドエンジニア',
+      description: 'レコーディング/ミックス/マスタリング',
+      socialLinks: []
     },
     about: {
       paragraphs: [
-        'こんにちは！久積奎吾と申します。音響に情熱を持つ音響エンジニアです。',
-        '音響技術専門学校を卒業後、レコーディングスタジオで5年間勤務し、様々なアーティストの録音、ミキシング、マスタリングを担当してきました。',
-        '現在はフリーランスとして独立し、レコーディング、ライブPA、音響デザインなど幅広い音響制作に携わっています。常にクライアントのビジョンを実現し、最高の音質を追求することを心がけています。'
+        '音響の専門学校を卒業後、5年間レコーディングスタジオに勤務。その後独立して現在活動中。'
       ],
-      infoCards: [
-        { icon: '💼', title: '職業', value: '音響エンジニア' },
-        { icon: '🎓', title: '学歴', value: '音響技術専門学校卒業' }
+      infoCards: [],
+      socialLinks: [
+        { name: 'Discord', url: 'https://discord.com', icon: 'discord', username: 'zumi_0529' },
+        { name: 'Twitter (現X)', url: 'https://x.com/zuming', icon: 'twitter' },
+        { name: 'Bluesky', url: 'https://bsky.app/profile/zuming.bsky.social', icon: 'bluesky' },
+        { name: 'お仕事させていただいたリスト', url: 'https://youtube.com/playlist?list=PL75mlFdi1Jn5eTeKN4x6i5PWadLweV2L6&si=jC6Kv3PW-9EWvOzS', icon: 'youtube' }
+      ]
+    },
+    pricing: {
+      images: [
+        {
+          src: 'https://github.com/user-attachments/assets/5183aaa8-0306-4460-ac3f-d33fe1ca1fdf',
+          alt: 'バンドや弾き語りの場合'
+        },
+        {
+          src: 'https://github.com/user-attachments/assets/a5545fff-7578-4f69-a5cb-95914cebdb56',
+          alt: '歌ってみた形式の場合'
+        }
       ]
     },
     equipment: [
@@ -185,47 +194,21 @@ export const profiles = {
     portfolio: [
       {
         id: 1,
-        title: 'インディーバンドアルバム制作',
-        description: '新人インディーバンドのデビューアルバムをフルプロデュース。レコーディング、ミキシング、マスタリングまで全工程を担当。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['レコーディング', 'ミキシング', 'マスタリング'],
-        demoUrl: 'https://example.com/demo1',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
+        title: '毛布にくるまって',
+        description: '浮力 — レコーディング・ミックス・マスタリング担当',
+        youtubeId: 'O-hlZ98lur8',
+        tags: ['レコーディング', 'ミックス', 'マスタリング'],
+        demoUrl: 'https://youtu.be/O-hlZ98lur8',
+        demoLabel: 'YouTube で視聴'
       },
       {
         id: 2,
-        title: 'ライブイベント音響',
-        description: '大型音楽フェスティバルのメインステージPA担当。500人規模の会場で最高の音響環境を提供。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['ライブPA', '音響設計', 'イベント'],
-        demoUrl: 'https://example.com/demo2',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
-      },
-      {
-        id: 3,
-        title: 'ポッドキャスト制作',
-        description: '人気ポッドキャストシリーズの音響制作。録音、編集、マスタリングまで一貫して担当。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['録音', '編集', 'ポッドキャスト'],
-        demoUrl: 'https://example.com/demo3',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
-      },
-      {
-        id: 4,
-        title: '映像作品音響デザイン',
-        description: '短編映画の音響デザインとミキシング。効果音の制作からファイナルミックスまで担当。',
-        image: 'https://via.placeholder.com/400x250',
-        tags: ['音響デザイン', '効果音', '映像音響'],
-        demoUrl: 'https://example.com/demo4',
-        sourceUrl: 'https://soundcloud.com',
-        demoLabel: '詳細',
-        sourceLabel: 'サンプル視聴'
+        title: 'シンデレラリバティズ',
+        description: 'シンデレラ・ガール — レコーディング・ミックス・マスタリング担当',
+        youtubeId: '14ahw3QO4wQ',
+        tags: ['レコーディング', 'ミックス', 'マスタリング'],
+        demoUrl: 'https://youtu.be/14ahw3QO4wQ',
+        demoLabel: 'YouTube で視聴'
       }
     ]
   }

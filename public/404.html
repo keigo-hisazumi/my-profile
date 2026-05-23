@@ -5,8 +5,9 @@
   <title>My Profile</title>
   <script>
     // GitHub Pages SPA リダイレクト
-    // pathSegmentsToKeep=1 はリポジトリ名 (/my-profile/) を保持する
-    var pathSegmentsToKeep = 1;
+    // PR プレビュー (/my-profile/pr-N/...) は 2 セグメント、本番は 1 セグメント保持
+    var pathParts = window.location.pathname.split('/').filter(Boolean);
+    var pathSegmentsToKeep = (pathParts.length >= 2 && /^pr-\d+$/.test(pathParts[1])) ? 2 : 1;
     var l = window.location;
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +

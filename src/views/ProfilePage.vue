@@ -2,10 +2,10 @@
   <div>
     <Hero :profileData="profileData.hero" />
     <About :profileData="profileData.about" />
+    <Pricing v-if="profileData.pricing" :profileData="profileData.pricing" />
     <Skills v-if="profileData.skills" :profileData="profileData.skills" />
-    <Equipment v-if="profileData.equipment" :profileData="profileData.equipment" />
     <Portfolio :profileData="profileData.portfolio" />
-    <Contact />
+    <Equipment v-if="profileData.equipment" :profileData="profileData.equipment" />
   </div>
 </template>
 
@@ -15,12 +15,12 @@ import About from '../components/About.vue'
 import Skills from '../components/Skills.vue'
 import Equipment from '../components/Equipment.vue'
 import Portfolio from '../components/Portfolio.vue'
-import Contact from '../components/Contact.vue'
+import Pricing from '../components/Pricing.vue'
 import { profiles } from '../data/profiles.js'
 
 export default {
   name: 'ProfilePage',
-  components: { Hero, About, Skills, Equipment, Portfolio, Contact },
+  components: { Hero, About, Skills, Equipment, Portfolio, Pricing },
   props: {
     profileKey: {
       type: String,
