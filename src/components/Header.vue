@@ -18,7 +18,7 @@
           </li>
           <li><a href="#portfolio" @click="closeMenu">ポートフォリオ</a></li>
           <li v-if="currentProfile === 'soundEngineer'">
-            <a href="#equipment" @click="closeMenu">機材</a>
+            <a href="#equipment" @click="closeMenu">所持機材</a>
           </li>
           <li v-if="currentProfile === 'webDeveloper'">
             <button @click="handleProfileToggle" class="profile-toggle" :title="toggleTitle">
