@@ -100,18 +100,19 @@ export const profiles = {
       name: '久積奎吾',
       occupation: 'サウンドエンジニア',
       description: 'レコーディング/ミックス/マスタリング',
-      socialLinks: [
-        { name: 'Discord', url: 'https://discord.com', icon: 'discord', username: 'zumi_0529' },
-        { name: 'Twitter (現X)', url: 'https://x.com/zuming', icon: 'twitter' },
-        { name: 'Bluesky', url: 'https://bsky.app/profile/zuming.bsky.social', icon: 'bluesky' },
-        { name: 'お仕事させていただいたリスト', url: 'https://www.youtube.com', icon: 'youtube' }
-      ]
+      socialLinks: []
     },
     about: {
       paragraphs: [
         '音響の専門学校を卒業後、5年間レコーディングスタジオに勤務。その後独立して現在活動中。'
       ],
-      infoCards: []
+      infoCards: [],
+      socialLinks: [
+        { name: 'Discord', url: 'https://discord.com', icon: 'discord', username: 'zumi_0529' },
+        { name: 'Twitter (現X)', url: 'https://x.com/zuming', icon: 'twitter' },
+        { name: 'Bluesky', url: 'https://bsky.app/profile/zuming.bsky.social', icon: 'bluesky' },
+        { name: 'お仕事させていただいたリスト', url: 'https://youtube.com/playlist?list=PL75mlFdi1Jn5eTeKN4x6i5PWadLweV2L6&si=jC6Kv3PW-9EWvOzS', icon: 'youtube' }
+      ]
     },
     equipment: [
       {
