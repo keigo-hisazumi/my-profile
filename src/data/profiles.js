@@ -114,6 +114,18 @@ export const profiles = {
         { name: 'お仕事させていただいたリスト', url: 'https://youtube.com/playlist?list=PL75mlFdi1Jn5eTeKN4x6i5PWadLweV2L6&si=jC6Kv3PW-9EWvOzS', icon: 'youtube' }
       ]
     },
+    pricing: {
+      images: [
+        {
+          src: 'https://github.com/user-attachments/assets/5183aaa8-0306-4460-ac3f-d33fe1ca1fdf',
+          alt: 'バンドや弾き語りの場合'
+        },
+        {
+          src: 'https://github.com/user-attachments/assets/a5545fff-7578-4f69-a5cb-95914cebdb56',
+          alt: '歌ってみた形式の場合'
+        }
+      ]
+    },
     equipment: [
       {
         category: 'PC',
