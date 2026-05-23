@@ -18,12 +18,11 @@
           </li>
           <li><a href="#portfolio" @click="closeMenu">Portfolio</a></li>
           <li><a href="#contact" @click="closeMenu">Contact</a></li>
-          <li>
+          <li v-if="currentProfile === 'webDeveloper'">
             <button @click="handleProfileToggle" class="profile-toggle" :title="toggleTitle">
-              <span class="toggle-icon">{{ currentProfile === 'webDeveloper' ? '💻' : '🎵' }}</span>
+              <span class="toggle-icon">🎵</span>
               <span class="toggle-text-stack">
-                <span :style="{ visibility: currentProfile === 'webDeveloper' ? 'visible' : 'hidden' }">Web Dev</span>
-                <span :style="{ visibility: currentProfile !== 'webDeveloper' ? 'visible' : 'hidden' }">音響</span>
+                <span>音響</span>
               </span>
             </button>
           </li>
@@ -49,9 +48,7 @@ export default {
   },
   computed: {
     toggleTitle() {
-      return this.currentProfile === 'webDeveloper'
-        ? '音響エンジニアプロフィールに切り替え'
-        : 'Webデベロッパープロフィールに切り替え'
+      return '音響エンジニアプロフィールに切り替え'
     }
   },
   methods: {
@@ -62,8 +59,7 @@ export default {
       this.isMenuOpen = false
     },
     handleProfileToggle() {
-      const target = this.currentProfile === 'webDeveloper' ? '/sound' : '/dev'
-      this.$router.push(target)
+      this.$router.push('/sound')
       this.closeMenu()
     }
   }
