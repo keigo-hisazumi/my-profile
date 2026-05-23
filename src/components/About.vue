@@ -5,7 +5,7 @@
       <p v-for="(paragraph, index) in profileData.paragraphs" :key="index">
         {{ paragraph }}
       </p>
-      <div class="info-cards">
+      <div v-if="profileData.infoCards && profileData.infoCards.length" class="info-cards">
         <div v-for="card in profileData.infoCards" :key="card.title" class="info-card">
           <h3>{{ card.icon }} {{ card.title }}</h3>
           <p>{{ card.value }}</p>

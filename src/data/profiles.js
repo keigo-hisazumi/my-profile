@@ -97,12 +97,12 @@ export const profiles = {
   },
   soundEngineer: {
     hero: {
-      name: 'ずーみん',
+      name: '久積奎吾',
       occupation: 'サウンドエンジニア',
-      description: '音響機器ヲタク / レコーディング/ミックス/マスタリング',
+      description: 'レコーディング/ミックス/マスタリング',
       socialLinks: [
         { name: 'Discord', url: 'https://discord.com', icon: 'discord', username: 'zumi_0529' },
-        { name: 'Twitter (現X)', url: 'https://twitter.com', icon: 'twitter' },
+        { name: 'Twitter (現X)', url: 'https://x.com/zuming', icon: 'twitter' },
         { name: 'Bluesky', url: 'https://bsky.app/profile/zuming.bsky.social', icon: 'bluesky' },
         { name: 'お仕事させていただいたリスト', url: 'https://www.youtube.com', icon: 'youtube' }
       ]
@@ -111,10 +111,7 @@ export const profiles = {
       paragraphs: [
         '音響の専門学校を卒業後、5年間レコーディングスタジオに勤務。その後独立して現在活動中。'
       ],
-      infoCards: [
-        { icon: '💼', title: '職業', value: 'サウンドエンジニア' },
-        { icon: '🎓', title: '学歴', value: '音響専門学校卒業' }
-      ]
+      infoCards: []
     },
     equipment: [
       {
@@ -138,7 +135,6 @@ export const profiles = {
       {
         category: 'I/O',
         items: [
-          'MOTU / 828mk3 Hybrid',
           'MACKIE / DL16S',
           'STEINBERG / UR28M'
         ]
