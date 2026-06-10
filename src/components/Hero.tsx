@@ -11,7 +11,7 @@ export default function Hero({ profileData }: Props) {
     <section className={styles.hero}>
       <div className={styles.heroContent}>
         <div className={styles.profileImage}>
-          <img src="/profile.png" alt="Profile Photo" />
+          <img src={`${import.meta.env.BASE_URL}profile.png`} alt="Profile Photo" />
         </div>
         <div className={styles.heroText}>
           <h1 className={styles.name}>{profileData.name}</h1>
