@@ -1,74 +1,3 @@
-<template>
-  <header class="header">
-    <div class="container">
-      <nav>
-        <h1 class="logo">My Profile</h1>
-        <button class="hamburger" @click="toggleMenu" :class="{ active: isMenuOpen }" aria-label="メニュー">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-links" :class="{ active: isMenuOpen }">
-          <li><a href="#about" @click="closeMenu">自己紹介</a></li>
-          <li v-if="currentProfile === 'soundEngineer'">
-            <a href="#pricing" @click="closeMenu">料金表</a>
-          </li>
-          <li v-if="currentProfile === 'webDeveloper'">
-            <a href="#skills" @click="closeMenu">スキル</a>
-          </li>
-          <li><a href="#portfolio" @click="closeMenu">ポートフォリオ</a></li>
-          <li v-if="currentProfile === 'soundEngineer'">
-            <a href="#equipment" @click="closeMenu">所持機材</a>
-          </li>
-          <li v-if="currentProfile === 'webDeveloper'">
-            <button @click="handleProfileToggle" class="profile-toggle" :title="toggleTitle">
-              <span class="toggle-icon">🎵</span>
-              <span class="toggle-text-stack">
-                <span>音響</span>
-              </span>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-</template>
-
-<script>
-export default {
-  name: 'Header',
-  props: {
-    currentProfile: {
-      type: String,
-      required: true
-    }
-  },
-  data() {
-    return {
-      isMenuOpen: false
-    }
-  },
-  computed: {
-    toggleTitle() {
-      return '音響エンジニアプロフィールに切り替え'
-    }
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen
-    },
-    closeMenu() {
-      this.isMenuOpen = false
-    },
-    handleProfileToggle() {
-      this.$router.push('/sound')
-      this.closeMenu()
-    }
-  }
-}
-</script>
-
-<style scoped>
 .header {
   background-color: white;
   box-shadow: var(--shadow);
@@ -77,7 +6,7 @@ export default {
   z-index: 100;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,33 +54,33 @@ nav {
   transform: translateY(-10.5px) rotate(-45deg);
 }
 
-.nav-links {
+.navLinks {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 
-.nav-links a {
+.navLinks a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.navLinks a:hover {
   color: var(--primary-color);
 }
 
-.toggle-text-stack {
+.toggleTextStack {
   display: grid;
   font-size: 0.85rem;
 }
 
-.toggle-text-stack > span {
+.toggleTextStack > span {
   grid-area: 1 / 1;
 }
 
-.profile-toggle {
+.profileToggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,22 +97,21 @@ nav {
   box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
 }
 
-.profile-toggle:hover {
+.profileToggle:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
 }
 
-.toggle-icon {
+.toggleIcon {
   font-size: 1.2rem;
 }
-
 
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
-  .nav-links {
+  .navLinks {
     position: fixed;
     left: 0;
     top: var(--header-height);
@@ -199,26 +127,25 @@ nav {
     opacity: 0;
   }
 
-  .nav-links.active {
+  .navLinks.active {
     max-height: 400px;
     opacity: 1;
     padding: 1rem 0;
   }
 
-  .nav-links li {
+  .navLinks li {
     padding: 0.8rem 0;
   }
 
-  .nav-links a {
+  .navLinks a {
     display: block;
     padding: 0.5rem 0;
     font-size: 1.1rem;
   }
 
-  .profile-toggle {
+  .profileToggle {
     padding: 0.8rem 1.5rem;
     margin: 0.5rem auto;
     width: fit-content;
   }
 }
-</style>
