@@ -2,7 +2,7 @@
 
 このリポジトリへの貢献を歓迎します。本書は Issue / PR を作成する前に確認してほしい事項をまとめたものです。
 
-> 開発ルールの正本は [`AGENTS.md`](./AGENTS.md) です。AI エージェント（Claude / Cursor / Copilot 等）で作業する場合のルールも `AGENTS.md` に記載されています。
+> 開発ルールの正本は [`AGENTS.md`](./AGENTS.md) です。AI エージェント（Claude / Cursor / Copilot 等）で作業する場合のルールも `AGENTS.md` に記載されています（`CLAUDE.md` などの各ツール向けファイルは `AGENTS.md` を参照しています）。
 
 ## はじめに
 
@@ -42,7 +42,7 @@ PR テンプレート（`.github/PULL_REQUEST_TEMPLATE.md`）に沿って、以�
 
 - [ ] タイトル・本文・コメントがすべて日本語で書かれている
 - [ ] PR タイトルが `feat: 〜` のような Conventional Commits 形式になっている
-- [ ] CI（lint / build）が通っている
+- [ ] CI（lint / typecheck / build・PR タイトル検証）が通っている
 - [ ] 影響範囲を記載した
 - [ ] 関連 Issue を `Closes #123` 等でリンクした
 - [ ] 必要に応じてドキュメント／README を更新した
