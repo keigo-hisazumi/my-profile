@@ -41,7 +41,8 @@ async function getUserInfo(userId) {
 - 主なプレフィックス: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `perf`, `style`, `build`, `ci`
 
 例:
-```
+
+```text
 feat: ユーザー一覧画面を追加
 
 - ユーザー検索機能を実装
