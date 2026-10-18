@@ -1,23 +1,22 @@
-## 概要 (Summary)
+---
+name: Pull request template
+about: Use this template when opening pull requests
+---
 
-<!-- このPRで何を、なぜ変更したかを1〜3個の箇条書きで記載してください -->
+## 概要 (Summary)
 
 ## 関連する Issue (Related issues)
 
-<!-- 関連 Issue を記載: 例 Closes #123 -->
-
 ## 変更内容 (What changed)
 
-- <!-- 主要な変更点を箇条書きで記載 -->
+- 何を変更したかを箇条書きで記載
 
 ## チェックリスト (Checklist)
 
-- [ ] ビルドが通っている
 - [ ] PR タイトルが `feat: 〜` のような Conventional Commits 形式になっている
-- [ ] テストを追加 / 更新した（対象がある場合）
-- [ ] ドキュメントを更新した（対象がある場合）
-- [ ] 依存関係の変更を記載した（ある場合）
+- [ ] ビルドが通る
+- [ ] テストが追加/更新されている
+- [ ] ドキュメントが更新されている
+- [ ] 依存関係の変更があれば説明を追加
 
 ## 備考 (Additional notes)
-
-<!-- レビューアに伝えたい補足情報があれば記載してください -->
